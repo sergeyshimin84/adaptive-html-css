@@ -1,11 +1,51 @@
+/*--- сбрасываем стили --- */
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+/* убираем декорацию ссылок */
+a {
+    text-decoration: none;
+}
+/* убираем стиль списков */
+ul,
+ol,
+li {
+    list-style: none;
+}
+/* выравниваем изображения по верху */
+img {
+    vertical-align: top;
+}
+/* убираем стили заголовков */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+/* дефолтные настройки для всего документа */
+html,
 body {
     height: 100%;
     line-height: 1;
     font-size: 16px;
     color: #000;
 }
+/*--- сбрасываем стили --- */
 
 .wrapper {
     min-height: 100%;
     overflow: hidden;
+}
+._container {
+    max-width: 1046px;
+    /* выстроит блок по центру */
+    margin: 0px auto;
 }
