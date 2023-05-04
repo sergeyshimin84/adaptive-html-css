@@ -6,20 +6,26 @@
     border: 0;
     box-sizing: border-box;
 }
+
 /* убираем декорацию ссылок */
 a {
     text-decoration: none;
+    /* указываем "color: inherit", т.к. ссылки цвет не наследуют */
+    color: inherit;
 }
+
 /* убираем стиль списков */
 ul,
 ol,
 li {
     list-style: none;
 }
+
 /* выравниваем изображения по верху */
 img {
     vertical-align: top;
 }
+
 /* убираем стили заголовков */
 h1,
 h2,
@@ -30,22 +36,71 @@ h6 {
     font-weight: inherit;
     font-size: inherit;
 }
+
 /* дефолтные настройки для всего документа */
 html,
 body {
     height: 100%;
     line-height: 1;
-    font-size: 16px;
-    color: #000;
+    font-size: 14px;
+    color: #252B42;
+    font-weight: 500;
+    font-family: Montserrat;
 }
+
 /*--- сбрасываем стили --- */
 
 .wrapper {
     min-height: 100%;
     overflow: hidden;
 }
+
 ._container {
     max-width: 1046px;
     /* выстроит блок по центру */
     margin: 0px auto;
+}
+
+/*--- header --- */
+
+.header {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    /* проставляем большой z-index, header будет на первом плане */
+    z-index: 50;
+}
+
+.header__container {
+    display: flex;
+    min-height: 104px;
+    align-items: center;
+}
+
+.header__logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.header__menu {
+    /* применяем стили к блоку который не влияет на окружающие (правила БЭМ) */
+    margin: 0px 0px 0px 133px;
+}
+
+.menu {}
+
+.menu__list {
+    display: flex;
+}
+
+.menu__item:not(:last-child) {
+    margin: 0px 21px 0px 0px;
+}
+
+.menu__link {
+    color: #737373;
+    font-weight: 600;
+    /* указываем размер шрифта в зависимости от главного шрифта logo (в процентах) */
+    line-height: calc(24 / 14 * 100%);
 }
