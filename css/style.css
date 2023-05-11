@@ -166,8 +166,11 @@ body {
     /* позволяет main увеличиваться по вертикали */
     flex: 1 1 auto;
 }
+.page__main-block {
 
-.page__main-block {}
+}
+.page__services {
+}
 
 /* --- main-block --- */
 .main-block {
@@ -284,6 +287,59 @@ body {
         /* "выбеливаем" картинку для лучшей читаемости текста */
         opacity: 0.7;
     }
+}
+
+/* --- services --- */
+
+.services {
+}
+.services__container {
+}
+.services__body {
+    display: flex;
+    /* делаем отрицательный отступ по краям блока, компенсируя padding: 0px 15px колонок внутри (services__column) */
+    margin: 0px -15px;
+}
+.services__column {
+    /* задаем отступы между колонок */
+    padding: 0px 15px;
+    /* задаем часть которую будет занимать одна колонка */
+    flex: 0 1 33.333%;
+}
+.services__item {
+    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+    background-color: #FFFFFF;
+    padding: 35px 40px;
+}
+.item-service {
+}
+/* задаем отступы, всем элементам кроме последнего */
+.item-service > *:not(:last-child) {
+    margin: 0px 0px 10px 0px;
+}
+.item-service_green {
+    background-color: #0D5C63;
+}
+.item-service_green .item-service__title {
+    color: #FFFFFF;
+}
+.item-service_green .item-service__text {
+    color: #FFFFFF;
+}
+.item-service__icon {
+}
+.item-service__title {
+    font-weight: 700;
+    /* задаем растояние между буквами */
+    letter-spacing: 0.1%;
+    font-size: 24px;
+    line-height: calc(32 / 24 * 100%);
+}
+.item-service__text {
+    color: #737373;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(20 / 14 * 100%);
 }
 
 /*--- footer --- */
