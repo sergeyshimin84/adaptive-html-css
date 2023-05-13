@@ -300,29 +300,22 @@ body {
 .services__container {
 }
 .services__body {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(auto, 329px));
+    gap: 30px 30px;
     /* делаем отрицательный отступ по краям блока, компенсируя padding: 0px 15px колонок внутри (services__column) */
     margin: 0px -15px;
 }
-@media (max-width: 992px) {
+@media (max-width: 479px) {
     .services__body {
-        /* адаптив, блоки сдвигаются при сужении экрана */
-        flex-wrap: wrap;
+        grid-template-columns: auto;
     }
 }
-
 .services__column {
-    /* задаем отступы между колонок */
-    padding: 0px 15px;
-    /* задаем часть которую будет занимать одна колонка */
-    flex: 0 1 33.333%;
-}
-@media (max-width: 992px) {
-    .services__column {
-        margin: 0px 0px 30px 0px;
-    }
 }
 .services__item {
+    max-height: 242px;
+    justify-items: center;
     box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
     background-color: #FFFFFF;
     padding: 35px 40px;
