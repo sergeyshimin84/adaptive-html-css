@@ -167,13 +167,33 @@ body {
     flex: 1 1 auto;
 }
 .page__main-block {
-
 }
 .page__services {
     position: relative;
     z-index: 2;
     /* сдвигаем блоки вверх, позиционируем для видимости (только за отрицательным margin "поднимуться" все остальные блоки) */
     margin: -111px 0px 0px 0px;
+}
+.page__advantages {
+}
+
+/*--- header-block --- */
+.header-block {
+    text-align: center;
+}
+.header-block__title {
+    color: linear-gradient(0deg, #252B42, #252B42), linear-gradient(0deg, #000000, #000000);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: calc(57 / 40 * 100%);
+    letter-spacing: 0.2px; 
+}
+.header-block__sub-title {
+    color: #737373;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: calc(20 / 14 * 100%);
+    letter-spacing: 0.2px; 
 }
 
 /* --- main-block --- */
@@ -294,7 +314,6 @@ body {
 }
 
 /* --- services --- */
-
 .services {
 }
 .services__container {
@@ -350,6 +369,26 @@ body {
     letter-spacing: 0.2%;
     font-size: 14px;
     line-height: calc(20 / 14 * 100%);
+}
+
+/* --- advantages --- */
+.advantages {
+}
+.advantages__container {
+}
+.advantages__header {
+}
+.advantages__body {
+}
+.advantages__column {
+}
+.advantages__item {
+}
+.advantages__icon {
+}
+.advantages__value {
+}
+.advantages__text {
 }
 
 /*--- footer --- */
