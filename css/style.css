@@ -409,15 +409,19 @@ body {
 
 .advantages__body {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(auto, 329px));
-    gap: 30px 30px;
-    /* делаем отрицательный отступ по краям блока, компенсируя padding: 0px 15px колонок внутри (services__column) */
-    margin: 0px -15px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
 }
 
 .advantages__column {}
 
-.advantages__item {}
+.advantages__item {
+    height: 209px;
+    justify-items: center;
+    box-shadow: 4px 0px, 4px rgba(0, 0, 0, 0.25);
+    background-color: #FFFFFF;
+    padding: 35px 40px;
+}
 
 .advantages__icon {}
 
