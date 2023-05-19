@@ -412,6 +412,17 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 30px;
 }
+@media (max-width: 992px) {
+    .advantages__body {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+@media (max-width: 600px) {
+    .advantages__body {
+        gap: 20px;
+    }
+}
 
 .advantages__column {
     height: 209px;
