@@ -189,6 +189,7 @@ body {
     font-weight: 700;
     line-height: calc(57 / 40 * 100%);
     letter-spacing: 0.2px;
+    margin: 0px 0px 0px 0px;
 }
 
 .header-block__sub-title {
@@ -197,6 +198,7 @@ body {
     font-weight: 500;
     line-height: calc(20 / 14 * 100%);
     letter-spacing: 0.2px;
+    margin: 0px 0px 50px 0px;
 }
 
 /* --- main-block --- */
@@ -405,7 +407,14 @@ body {
 
 .advantages__container {}
 
-.advantages__header {}
+.advantages__header {
+    margin: 80px 0px 80px 0px;
+}
+@media (max-width: 600px) {
+    .advantages__header {
+        margin: 40px 0px 40px 0px;
+    }
+}
 
 .advantages__body {
     display: grid;
