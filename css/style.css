@@ -179,6 +179,8 @@ body {
 
 .page__advantages {}
 
+.page__practice {}
+
 /*--- header-block --- */
 .header-block {
     text-align: center;
@@ -490,6 +492,59 @@ body {
     letter-spacing: 0.1%;
     font-size: 16px;
     line-height: calc(24 / 16 * 100%);
+}
+
+/* --- practice --- */
+.practice {
+}
+.practice__container {
+}
+.practice__header {
+    margin: 80px 0px 80px 0px;
+}
+.practice__header .header-block__title {
+    margin: 0px 0px 10px 0px;
+    padding: 45px 0px 0px 0px;
+}
+.practice__header .header-block__sub-title {
+    margin: 0px 0px 45px 0px;
+}
+.practice__body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 35px;
+}
+.practice__column {
+    height: 341px;
+}
+.item-practice__content {
+    padding: 30px;
+}
+.practice__item {
+    background-color: #FFFFFF;
+}
+.item-practice {
+}
+.item-practice__link {
+}
+.item-practice__title {
+    text-align: start;
+    color: #252B42;
+    font-weight: 700;
+    letter-spacing: 0.1%;
+    font-size: 16px;
+    line-height: calc(24 / 16 * 100%);
+    margin: 0px 0px 15px 0px;
+}
+.item-practice__text {
+    text-align: start;
+    color: #737373;
+    font-weight: 500;
+    letter-spacing: 0.2%;
+    font-size: 14px;
+    line-height: calc(20 / 14 * 100%);
+}
+.item-practice__image {
 }
 
 /*--- footer --- */
