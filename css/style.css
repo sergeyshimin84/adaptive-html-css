@@ -514,16 +514,39 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 35px;
 }
+@media (max-width: 1040px) {
+    .practice__body {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+@media (max-width: 600px) {
+    .practice__body {
+        gap: 20px;
+    }
+}
+@media (max-width: 479px) {
+    .practice__body {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+}
 .practice__column {
     height: 341px;
 }
+
 .item-practice__content {
     padding: 30px;
+    flex: 1 1 auto;
 }
 .practice__item {
-    background-color: #FFFFFF;
 }
 .item-practice {
+    background-color: #FFFFFF;
+    /* картинки будут всегда внизу колонки */
+    display: flex;
+    height: 100%;
+    flex-direction: column;
 }
 .item-practice__link {
 }
