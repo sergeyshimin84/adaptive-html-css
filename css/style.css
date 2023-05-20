@@ -444,6 +444,12 @@ body {
         gap: 20px;
     }
 }
+@media (max-width: 479px) {
+    .advantages__body {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+}
 
 .advantages__column {
     height: 209px;
