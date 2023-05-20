@@ -42,6 +42,7 @@ html,
 body {
     height: 100%;
     line-height: 1;
+    background-color: #FAFAFA;
     font-size: 14px;
     color: #252B42;
     font-weight: 500;
@@ -189,7 +190,6 @@ body {
     font-weight: 700;
     line-height: calc(57 / 40 * 100%);
     letter-spacing: 0.2px;
-    margin: 0px 0px 0px 0px;
 }
 
 .header-block__sub-title {
@@ -198,7 +198,6 @@ body {
     font-weight: 500;
     line-height: calc(20 / 14 * 100%);
     letter-spacing: 0.2px;
-    margin: 0px 0px 50px 0px;
 }
 
 /* --- main-block --- */
@@ -287,7 +286,7 @@ body {
 }
 
 .main-block__button_orange {
-    background: #FF7B47;
+    background-color: #FF7B47;
     color: #FFFFFF;
 }
 
@@ -403,16 +402,29 @@ body {
 }
 
 /* --- advantages --- */
-.advantages {}
+.advantages {
+    margin: 80px 0px 80px 0px;
+}
+@media (max-width: 600px) {
+    .advantages {
+        margin: 40px 0px 40px 0px;
+    }
+}
 
 .advantages__container {}
 
 .advantages__header {
-    margin: 80px 0px 80px 0px;
 }
+.advantages__header .header-block__title {
+    margin: 0px 0px 10px 0px;
+}
+.advantages__header .header-block__sub-title {
+    margin: 0px 0px 50px 0px;
+}
+
 @media (max-width: 600px) {
-    .advantages__header {
-        margin: 40px 0px 40px 0px;
+    .advantages__header .header-block__sub-title{
+        margin: 0px 0px 25px 0px;
     }
 }
 
