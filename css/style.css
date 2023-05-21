@@ -181,6 +181,9 @@ body {
 
 .page__practice {}
 
+.page__whoweare {
+}
+
 /*--- header-block --- */
 .header-block {
     text-align: center;
@@ -575,23 +578,35 @@ body {
 /* --- whoweare --- */
 .page__whoweare {
 }
+
+.whoweare__header {
+    margin: 0px 0px 100px 0px;
+}
+.whoweare__header .header-block__title {
+    margin: 0px 0px 10px 0px;
+}
 .whoweare__container {
 }
-._container {
-}
-.whoweare__header {
-}
-.header-block {
-}
-.header-block__title {
-}
-.header-block__sub-title {
-}
 .whoweare__body {
+    display: flex;
 }
 .whoweare__video {
+    flex: 0 0 57%;
+    position: relative;
+    /* задаем паддинг для видео в проценте от ширины контейнера */
+    padding: 0px 0px 42.25% 0px;
+}
+.whoweare__video iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
 }
 .whoweare__content {
+    display: 1 1 auto;
+    padding: 0px 0px 0px 121px;
 }
 .whoweare__title {
 }
