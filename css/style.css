@@ -168,8 +168,7 @@ body {
   flex: 1 1 auto;
 }
 
-.page__main-block {
-}
+.page__main-block {}
 
 .page__services {
   position: relative;
@@ -178,14 +177,11 @@ body {
   margin: -111px 0px 0px 0px;
 }
 
-.page__advantages {
-}
+.page__advantages {}
 
-.page__practice {
-}
+.page__practice {}
 
-.page__whoweare {
-}
+.page__whoweare {}
 
 /*--- header-block --- */
 .header-block {
@@ -214,8 +210,7 @@ body {
   position: relative;
 }
 
-.main-block__container {
-}
+.main-block__container {}
 
 .main-block__body {
   padding: 184px 0px 191px 0px;
@@ -231,7 +226,7 @@ body {
 }
 
 /* Обращаемся ко всем объектам первого уровня с любым тегом (кроме строчных тегов)*/
-.main-block__body > *:not(:last-child) {
+.main-block__body>*:not(:last-child) {
   margin: 0px 0px 35px 0px;
 }
 
@@ -328,11 +323,9 @@ body {
 }
 
 /* --- services --- */
-.services {
-}
+.services {}
 
-.services__container {
-}
+.services__container {}
 
 .services__body {
   display: grid;
@@ -354,8 +347,7 @@ body {
   }
 }
 
-.services__column {
-}
+.services__column {}
 
 @media (max-width: 992px) {
   .services__column:last-child {
@@ -377,15 +369,14 @@ body {
   padding: 35px 40px;
 }
 
-.item-service {
-}
+.item-service {}
 
 .item-service_green {
   background-color: #0d5c63;
 }
 
 /* задаем отступы, всем элементам кроме последнего */
-.item-service > *:not(:last-child) {
+.item-service>*:not(:last-child) {
   margin: 0px 0px 10px 0px;
 }
 
@@ -397,8 +388,7 @@ body {
   color: #ffffff;
 }
 
-.item-service__icon {
-}
+.item-service__icon {}
 
 .item-service__title {
   font-weight: 700;
@@ -427,11 +417,9 @@ body {
   }
 }
 
-.advantages__container {
-}
+.advantages__container {}
 
-.advantages__header {
-}
+.advantages__header {}
 
 .advantages__header .header-block__title {
   margin: 0px 0px 10px 0px;
@@ -484,7 +472,7 @@ body {
   padding: 30px;
 }
 
-.advantages__item > *:not(:last-child) {
+.advantages__item>*:not(:last-child) {
   margin: 0px 0px 10px 0px;
 }
 
@@ -493,7 +481,7 @@ body {
   margin-right: auto;
 }
 
-.advantages__icon > img {
+.advantages__icon>img {
   width: 48px;
   height: 48px;
 }
@@ -517,11 +505,9 @@ body {
 }
 
 /* --- practice --- */
-.practice {
-}
+.practice {}
 
-.practice__container {
-}
+.practice__container {}
 
 .practice__header {
   margin: 80px 0px 0px 0px;
@@ -571,8 +557,7 @@ body {
   flex: 1 1 auto;
 }
 
-.practice__item {
-}
+.practice__item {}
 
 .item-practice {
   background-color: #ffffff;
@@ -582,8 +567,7 @@ body {
   flex-direction: column;
 }
 
-.item-practice__link {
-}
+.item-practice__link {}
 
 .item-practice__title {
   text-align: start;
@@ -653,8 +637,7 @@ body {
   padding: 20px 0px 0px 121px;
 }
 
-.whoweare__top {
-}
+.whoweare__top {}
 
 .whoweare__top:not(:last-child) {
   margin: 0px 0px 50px 0px;
@@ -668,6 +651,7 @@ body {
   font-size: 40px;
   line-height: calc(57 / 40 * 100%);
 }
+
 .whoweare__title:not(:last-child) {
   margin: 0px 0px 10px 0px;
 }
@@ -685,11 +669,9 @@ body {
   margin: 0px 0px 50px 0px;
 }
 
-.whoweare__items {
-}
+.whoweare__items {}
 
-.whoweare__item {
-}
+.whoweare__item {}
 
 .whoweare__item:not(:last-child) {
   margin: 0px 0px 30px 0px;
@@ -728,33 +710,66 @@ body {
   font-size: 14px;
   line-height: 141%;
 }
+
 @media (max-width: 1040px) {
   .whoweare__content {
     padding: 0px 0px 0px 50px;
   }
 }
+
 @media (max-width: 950px) {
   .whoweare {
     padding: 50px 0px 50px 0px;
   }
+
+  .whoweare__header {
+    margin: 0px 0px 30px 0px;
+  }
+
   .whoweare__body {
     flex-direction: column-reverse;
     align-items: stretch;
   }
+
   .whoweare__title {
     font-size: 24px;
   }
+
   .whoweare__content {
     padding: 0px 0px 0px 0px;
   }
+
+  .whoweare__video {
+    /* Задаем верные пропорции видео, с помощью поддинг (расчитываем верные пропорции с учетом ширины и высоты исходного файла) */
+    padding: 0px 0px 56.25% 0px;
+  }
+
   .whoweare__video:not(:last-child) {
     margin: 50px 0px 0px 0px;
   }
+
   .whoweare__header {
     padding: 0px 0px 30px 0px;
   }
 }
 
-/*--- footer --- */
-.footer {
+@media (max-width: 767px) {
+  .whoweare {
+    padding: 20px 0px 50px 0px;
+  }
+
+  .whoweare__header {
+    margin: 0px 0px 0px 0px;
+  }
+
+  .whoweare__top:not(:last-child) {
+    margin: 0px 0px 30px 0px;
+  }
+
+  .whoweare__video:not(:last-child) {
+    margin: 30px 0px 0px 0px;
+  }
 }
+
+/*--- footer --- */
+.footer {}
