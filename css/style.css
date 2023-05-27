@@ -197,6 +197,9 @@ body {
 .page__subscribe {
 }
 
+.page__getintouch {
+}
+
 /*--- header-block --- */
 .header-block {
   text-align: center;
@@ -920,6 +923,38 @@ body {
     margin: 0px -15px;
     padding: 20px 15px;
   }
+  .subscribe__button {
+    padding: 0px 15px;
+  }
+}
+
+.getintouch {
+}
+.getintouch__container {
+}
+.getintouch__header {
+}
+.header-block {
+}
+.header-block__title {
+}
+.header-block__sub-title {
+}
+.getintouch__items {
+}
+.getintouch__item {
+}
+.item-getintouch {
+}
+.item-getintouch__icon {
+}
+.item-getintouch__emails {
+}
+.item-getintouch__email {
+}
+.item-getintouch__label {
+}
+.item-getintouch__button {
 }
 
 /*--- footer --- */
