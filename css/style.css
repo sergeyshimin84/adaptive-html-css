@@ -965,7 +965,7 @@ body {
 }
 .item-getintouch__active {
   background-color: #252B42;
-  padding: 80px 40px;
+  margin: -30px 0px;
 }
 .item-getintouch__active .item-getintouch__email {
   color: #ffffff;
