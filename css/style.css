@@ -1162,9 +1162,12 @@ body {
   margin: 0px -15px;
 }
 .footer__column {
-  flex: 0 1 25%;
+  flex: 0 1 16.6667%;
   /* отступы "безопасности" */
   padding: 0px 15px;
+}
+.footer__column:last-child {
+  flex: 0 1 33.334%;
 }
 .footer__column > * {
   color: #ffffff;
@@ -1204,15 +1207,14 @@ body {
 }
 .contacts-footer {
   display: flex;
-}
-.contacts-footer__item {
-  display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   padding-left: 0px;
-  padding: 0px 0px 0px 34px;
+}
+.contacts-footer__item {
   min-height: 30px;
+  padding: 0px 0px 0px 34px;
 }
 .contacts-footer__item:not(:last-child) {
   margin: 0px 0px 15px 0px;
@@ -1234,6 +1236,8 @@ body {
   padding: 25px 0px;
 }
 .footer__container {
+  text-align: center;
+  margin: 0 auto;
 }
 @media (min-width: 767px) {
   .footer__container {
