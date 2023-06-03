@@ -1079,6 +1079,7 @@ body {
 
 /* --- contact --- */
 .contact {
+  background-color: #ffffff;
 }
 .contact__container {
 }
@@ -1098,6 +1099,7 @@ body {
   }
 }
 .contact__content {
+  padding: 0px 20px 0px 0px;
 }
 .contact__content > *:not(:last-child) {
   margin: 0px 0px 10px 0px;
@@ -1130,7 +1132,7 @@ body {
   align-items: center;
   padding: 15px 40px;
   background-color: #ff7b47;
-  border: 1px solid #ff7b47;
+  transition: background-color 0.3 ease 0s;
   border-radius: 5px;
   color: #ffffff;
 }
@@ -1141,8 +1143,7 @@ body {
   }
 }
 .contact__button_link:hover {
-  background-color: #ffffff;
-  color: #ff7b47;
+  background-color: #ff5f20;
 }
 
 /*--- footer --- */
